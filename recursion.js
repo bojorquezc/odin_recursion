@@ -2,7 +2,7 @@
 //Using an example input of 8, this function should return the array [0, 1, 1, 2, 3, 5, 8, 13].
 
 function fibs(number) {
-    fibArray = [];
+    let fibArray = [];
     let indexOne = 0
     let indexTwo = 1;
 
@@ -19,4 +19,17 @@ function fibs(number) {
         }
     }
     console.log(fibArray);
+}
+
+//Now write another function fibsRec which solves the same problem recursively. This can be done in just a couple of lines 
+//(or 1 if you’re crazy, but don’t consider either of these lengths a requirement… just get it done).
+
+
+// Needs work to push each number to the array
+ let fibRecArray = [];
+function fibsRec(number) {
+    if (number < 2)
+        return number;
+    else
+        return (fibsRec(number-1)+fibsRec(number-2));
 }
